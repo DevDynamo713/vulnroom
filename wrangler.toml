@@ -1,0 +1,12 @@
+name = "vulnroom"
+main = "worker/worker.ts"
+compatibility_date = "2024-07-01"
+
+[durable_objects]
+bindings = [
+  { name = "VULNROOM_DO", class_name = "VulnRoomDO" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["VulnRoomDO"]
